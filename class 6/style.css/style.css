@@ -1,0 +1,26 @@
+main,
+header,
+section,
+footer {
+  border: 1px solid;
+}
+p {
+  color: red;
+}
+ul {
+  background-color: dodgerblue;
+}
+h1,
+h2,
+h3 {
+  color: green;
+}
+tr :nth-of-type(odd) {
+  background-color: lightgray;
+}
+.strike {
+  text-decoration: line-through;
+}
+header a:hover {
+  font-size: 28px;
+}
