@@ -1,0 +1,18 @@
+* {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 15px;
+}
+
+img {
+  float: left;
+}
+
+img + p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* .clearfix { 
+  clear: both;
+}*/
