@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  color: black;
 }
 
 h3 {
@@ -27,9 +28,6 @@ button {
   background-color: rgb(223, 106, 106);
   color: white;
   margin-right: 150px;
-}
-
-likes {
 }
 
 .p-1 {

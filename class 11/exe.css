@@ -1,0 +1,35 @@
+.px {
+  font-size: 50px;
+}
+.in {
+  font-size: 1in;
+}
+.cm {
+  font-size: 1.5cm;
+}
+.mm {
+  font-size: 15mm;
+}
+.pt {
+  font-size: 50pt;
+}
+.pc {
+  font-size: 4.5pc;
+}
+.percent {
+  font-size: 150%;
+  border: 1px solid black;
+}
+.em-rem {
+}
+.vm-vh {
+  font-size: 20vh;
+}
+.vmax {
+  font-size: 15vmax;
+}
+.ex-ch {
+}
+.vmin {
+  font-size: 15vmin;
+}
