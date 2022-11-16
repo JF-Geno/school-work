@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+.item6 {
+  grid-area: nav;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "header header header header header header"
+    "menu menu main main right right "
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  background-color: rgba(2, 57, 74, 0.879);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(2, 57, 74, 0.879);
+  text-align: center;
+  padding: 20px 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+nav a {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+
+  text-decoration: none;
+  font-size: 17px;
+  max-height: 30px;
+}
+
+.contact {
+  border: white solid 1px;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  width: 130px;
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* .dna {
+  margin-bottom: 15px;
+} */
+
+.logo {
+  width: 130px;
+  border-top: green solid 7px;
+  padding-top: 10px;
+  padding-bottom: 55px;
+  margin: auto;
+  color: white;
+}
+
+nav h3 {
+  margin-bottom: 10px;
+}
+
+nav,
+h3 {
+  margin-bottom: 60px;
+}
+
+.toph2 {
+  color: white;
+}
+
+.boph3 {
+  margin-bottom: 9px;
+}
+
+h2,
+h2 {
+  margin-bottom: 10px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+text {
+  font-size: 25px;
+}
+nav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+header {
+  background-color: rgba(2, 57, 74, 0.879);
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+img {
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+/* main {
+  padding: auto;
+} */
+
+.card {
+  display: inline-block;
+  width: 360px;
+  margin-left: 7.5px;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
+}
+
+.pa {
+  margin-bottom: 10px;
+}

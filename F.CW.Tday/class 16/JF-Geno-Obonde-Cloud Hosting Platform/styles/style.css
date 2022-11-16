@@ -1,0 +1,712 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ///////////////////////////////////////////////////////////////*/
+body {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "m"
+    "f";
+
+  width: 1200px;
+  margin: auto;
+}
+/* ///////////////////////////////// */
+header {
+  grid-area: h;
+}
+main {
+  grid-area: m;
+}
+footer {
+  grid-area: f;
+}
+/* ///////////////////////////////////////////////////////////////*/
+
+/*///// head /////*/
+
+.left-nav {
+  display: grid;
+  grid-template-areas: " logo ul";
+
+  padding: 15px;
+  /* background-color: linear-gradient (#000000, #ffffff); */
+  padding-bottom: 0;
+}
+
+header ul {
+  grid-area: ul;
+}
+
+.logo {
+  /* grid-area: log; */
+  font-size: 25px;
+  padding-bottom: 5px;
+  color: white;
+  margin-right: 10px;
+}
+
+nav {
+  overflow: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 54%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-bottom: hsl(343, 98%, 51%) 2px solid;
+}
+
+header li {
+  display: inline;
+}
+header ul {
+  margin-top: 2px;
+}
+
+header a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 14px 15px 14px;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header a:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 48%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.left-nav {
+  float: left;
+}
+
+.button {
+  float: right;
+  padding: 5px 10px 5px 10px;
+  border: hsl(343, 98%, 51%) solid 1px;
+  border-radius: 5px;
+  margin-top: 11px;
+  margin-right: 30px;
+  background-color: white;
+  color: hsl(343, 98%, 51%);
+}
+
+/* ///////////////////////////////////////////////////////////////*/
+
+main {
+  display: grid;
+  grid-template-areas:
+    "i"
+    "wwww"
+    "bns"
+    "bfb";
+}
+
+/* ///////////////////////////////// */
+.introductions {
+  grid-area: i;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 80, 80, 1) 50%,
+    rgba(142, 142, 142, 1) 95%
+  );
+  display: grid;
+  grid-template-areas: "wwa sup";
+  gap: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  padding: 70px 5% 70px 5%;
+}
+
+.who-we-are {
+  grid-area: wwa;
+  height: 400px;
+  color: white;
+  padding-top: 10%;
+}
+
+.who-we-are h1 {
+  font-size: 40px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.who-we-are p {
+  font-size: 19px;
+}
+
+.sign-up {
+  /* border: black solid 3px; */
+  grid-area: sup;
+  background-color: hsl(343, 98%, 51%);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 4%;
+}
+
+input {
+  /* display: block; */
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 30px;
+}
+button.button {
+  margin-bottom: 10px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 0px;
+  width: 80.9%;
+  height: 30px;
+}
+.separator {
+  margin-bottom: 10px;
+  color: white;
+}
+.sign-up h2 {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.button-box {
+  height: 70px;
+}
+
+p {
+  color: white;
+}
+
+.button.google.button {
+  width: 170px;
+  margin: 0px;
+  margin-right: 50px;
+}
+
+.button.github.button {
+  width: 170px;
+  margin: 0px;
+  margin-right: 23px;
+}
+
+.fa-google {
+  margin-right: 10px;
+}
+.fa-github {
+  margin-right: 10px;
+}
+
+/* ///////////////////////////////// */
+
+.who-we-work-with {
+  grid-area: wwww;
+
+  background-color: hsl(341, 94%, 94%);
+  width: 100%;
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.who-we-work-with h2 {
+  color: hsl(343, 98%, 51%);
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.logos {
+  display: grid;
+  grid-template-areas: " z xam ibm shop lt lc";
+}
+
+.zendesk {
+  grid-area: z;
+  width: 190px;
+  height: 50px;
+}
+
+.x23-and-me {
+  grid-area: xam;
+  width: 190px;
+  height: 50px;
+}
+
+.ibm {
+  grid-area: ibm;
+  width: 190px;
+  height: 50px;
+}
+
+.shopify {
+  grid-area: shop;
+  width: 190px;
+  height: 50px;
+}
+
+.lending-tree {
+  grid-area: lt;
+  width: 190px;
+  height: 50px;
+}
+
+.lab-corp {
+  grid-area: lc;
+  width: 190px;
+  height: 50px;
+}
+
+/* ///////////////////////////////// */
+.buy-now-section {
+  grid-area: bns;
+  padding: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(69, 69, 69, 1) 53%,
+    rgba(77, 77, 77, 1) 95%
+  );
+  /* height: 316.4px; */
+}
+.section-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.section-wrapper li {
+  list-style-type: none;
+}
+
+.info {
+  /* border: black solid 3px; */
+  width: 33.3%;
+  /* height: 250px; */
+  flex: 33.3%;
+  margin: 30px 50px 30px 50px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(87, 87, 87, 1) 0%,
+    rgba(122, 122, 122, 1) 47%,
+    rgba(167, 167, 167, 1) 95%
+  );
+  color: white;
+}
+
+.features {
+  padding: 90px 40px 70px 40px;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.buy-now {
+  background-color: hsl(343, 98%, 51%);
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+}
+
+i.fas.fa-brain {
+  background-color: hsl(343, 98%, 51%);
+  padding: 30px;
+  position: absolute;
+  top: -40px;
+  left: 110px;
+  border-radius: 100px;
+}
+
+.price {
+  padding-bottom: 10px;
+}
+
+i.fab.fa-codepen {
+  background-color: hsl(343, 98%, 51%);
+  padding: 30px;
+  position: absolute;
+  top: -40px;
+  left: 110px;
+  border-radius: 100px;
+}
+
+i.fas.fa-coins {
+  background-color: hsl(343, 98%, 51%);
+  padding: 30px;
+  position: absolute;
+  top: -40px;
+  left: 110px;
+  border-radius: 100px;
+}
+
+/* ///////////////////////////////// */
+.built-for-business {
+  grid-area: bfb;
+  padding: 10px;
+  background-color: hsl(341, 94%, 94%);
+}
+
+.built-for-business i {
+  color: hsl(343, 98%, 51%);
+}
+
+.built-for-business ul {
+  display: flex;
+}
+
+.built-for-business h3 {
+  font-size: 20px;
+  margin: 15px 0px 15px 0px;
+  color: hsl(343, 98%, 51%);
+}
+
+.built-for-business p {
+  margin: 15px 0px 10px 0px;
+  color: black;
+  height: 120px;
+}
+
+.built-for-business a {
+  color: hsl(343, 98%, 51%);
+  text-decoration: none;
+}
+
+.built-for-business li {
+  /* border: black solid 3px; */
+  width: 25%;
+  margin: 30px 30px 30px 30px;
+  list-style-type: none;
+}
+
+.built-for-business div h4 {
+  font-size: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+/* ///////////////////////////////////////////////////////////////*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(343, 98%, 51%);
+}
+
+div.footer-list {
+  padding: 10px;
+  flex: 20%;
+  margin: 30px 30px 30px 30px;
+  padding-left: 90px;
+}
+
+/* //////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 700px;
+  }
+
+  nav {
+    width: 700px;
+  }
+
+  .introductions {
+    grid-area: i;
+    display: grid;
+    grid-template-areas: "wwa" "sup";
+    gap: 20px;
+    padding-left: 59px;
+    padding-right: 59px;
+    width: 586px;
+  }
+
+  .who-we-are {
+    height: 200px;
+  }
+
+  .sign-up {
+    padding-bottom: 5%;
+  }
+
+  button.button {
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 55px;
+    margin-top: 0px;
+    width: 81%;
+    height: 30px;
+  }
+
+  .button.google.button {
+    width: 225px;
+    margin-right: 50px;
+  }
+
+  .button.github.button {
+    width: 225px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .who-we-work-with {
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logos {
+    padding-left: 30px;
+  }
+
+  .zendesk {
+    width: 70px;
+    height: 40px;
+  }
+
+  .x23-and-me {
+    width: 70px;
+    height: 40px;
+  }
+
+  .ibm {
+    width: 70px;
+    height: 40px;
+  }
+
+  .shopify {
+    width: 70px;
+    height: 40px;
+  }
+
+  .lending-tree {
+    width: 70px;
+    height: 40px;
+  }
+
+  .lab-corp {
+    width: 70px;
+    height: 40px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .buy-now-section {
+    grid-area: bns;
+    width: 700px;
+    padding: 0px;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  div.info {
+    flex: 30%;
+    margin: 30px 40px 30px 40px;
+  }
+
+  .section-wrapper div.info:nth-child(3) {
+    max-width: 285px;
+    margin: 30px 207.5px 50px 207.5px;
+  }
+  .features {
+    padding: 90px 40px 70px 40px;
+
+    margin-bottom: 0px;
+  }
+
+  i.fas.fa-brain {
+    top: -40px;
+    left: 100px;
+    border-radius: 100px;
+  }
+
+  i.fab.fa-codepen {
+    top: -40px;
+    left: 100px;
+    border-radius: 100px;
+  }
+
+  i.fas.fa-coins {
+    top: -40px;
+    left: 100px;
+    border-radius: 100px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .built-for-business ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .built-for-business li {
+    width: 40%;
+  } /* //////////////////////////////////////////////////////////////////////*/
+
+  div.footer-list {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .left-nav {
+    margin-left: 100px;
+  }
+  nav {
+    width: 354px;
+  }
+
+  header a {
+    display: none;
+  }
+
+  /* ///////////////////////////////////////////////////////////////////////*/
+  .introductions {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 314px;
+  }
+
+  .who-we-are {
+    width: 314px;
+    height: 205px;
+    padding-top: 0px;
+  }
+
+  .who-we-are h1 {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .who-we-are p {
+    font-size: 19px;
+  }
+
+  button.button {
+    margin-right: 30px;
+  }
+
+  .button.google.button {
+    width: 105px;
+    margin: 0px;
+    margin-right: 30px;
+  }
+
+  .button.github.button {
+    width: 105px;
+    margin: 0px;
+    margin-right: 40px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .who-we-work-with {
+    width: 354px;
+  }
+
+  .logos {
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .zendesk {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .x23-and-me {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .ibm {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .shopify {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .lending-tree {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .lab-corp {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .buy-now-section {
+    padding: 0px;
+    width: 354px;
+  }
+  .section-wrapper {
+    width: 350px;
+  }
+  .section-wrapper div.info:nth-child(3) {
+    width: 354px;
+    margin: 30px 40px 50px 40px;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  .built-for-business {
+    padding: 0px;
+    width: 354px;
+  }
+  .built-for-business ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .built-for-business li {
+    width: 100%;
+  }
+  /* //////////////////////////////////////////////////////////////////////*/
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
+  }
+  div.footer-list {
+    padding: 0px;
+    flex: 100%;
+    padding-left: 60px;
+  }
+}
+
+/* By JF Geno Obonde */

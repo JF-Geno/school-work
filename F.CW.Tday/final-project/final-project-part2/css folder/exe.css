@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  text-align: center;
+  background-image: url("/final-project-part2/images/geometry2.png");
+  max-width: 1440px;
+  margin: auto;
+}
+
+.next-card {
+  width: 40%;
+  height: 100%;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4em;
+  color: #006c5d;
+}
+
+h1 span {
+  color: #0f3c5e;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5em 1em 5em 1em;
+  width: 90%;
+  background-color: #0f3c5e36;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.anchor {
+  width: 60%;
+  height: 15em;
+  margin: auto;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 4em;
+  margin-top: 3em;
+}
+
+img {
+  width: 40%;
+  height: 100%;
+}
+
+.redo img {
+  width: 5%;
+  height: 100%;
+}
+
+.apple img {
+  filter: invert(1);
+}
+
+.match-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.blue-card {
+  width: 24%;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: #0f3c5e;
+  height: 33.333%;
+}
+
+.cogs {
+  width: 24%;
+  margin: 0.5%;
+  border-radius: 10px;
+  height: 33.333%;
+  background-color: #c3e76a;
+  font-size: 100px;
+}
+
+.hat {
+  width: 24%;
+  margin: 0.5%;
+  border-radius: 10px;
+  height: 33.333%;
+  background-color: #c3e76a;
+  font-size: 48px;
+}
+
+.apple {
+  width: 24%;
+  margin: 0.5%;
+  border-radius: 10px;
+  height: 33.333%;
+  background-color: #006c5d;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 700px) {
+  .anchor {
+    height: 10em;
+    margin-bottom: 2em;
+    margin-top: 1.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
