@@ -152,4 +152,113 @@
 
 // alert (sign)
 
-///////////////
+//////////////////////////////////////////////////////////
+// let userInput = parseInt(prompt("num plz"));
+
+// while (userInput > 0 || userInput < 10) {
+//   userInput = parseInt(prompt("num plz"));
+// }
+
+// alert(userInput);
+
+//
+
+// function repeatStr(num, outPutstring) {
+//   let outPut = "";
+
+//   for (let i = 0; i < num; i++) {
+//     outPut += outPutstring;
+//   }
+
+//   return outPut;
+// }
+
+// console.log(repeatStr(6, "i"));
+
+///////////////////////////////////////////////////////////
+
+// function fizzBuzz(num, canBeDivided) {
+
+//  if (num % canBeDivided == 0) {
+//    console.log("fizz");
+//  }else if ()
+
+// }
+
+// function fizzBuzz(num,fizz,buzz) {
+//   if (num % buzz == 0 && num % fizz == 0) {
+//     console.log("FizzBuzz");
+//   } else if (num % buzz == 0) {
+//     console.log("buzz");
+//   } else if (num % fizz == 0) {
+//     console.log("Fizz");
+//   } else {
+//     console.log(num);
+//   }
+// }
+
+// fizzBuzz(100,3,5);
+
+// function beerWall(num) {
+//   for (let i = 0; i <= num; num--) {
+//     return num;
+//   }
+
+//   console.log(num + "bottles of beer on the wall!");
+// }
+
+// beerWall(100);
+// f;
+// for (i = 99; i >= 0; i--) {
+
+//   if (i > 0) {
+//     console.log(
+//       i +
+//         " bottles of beer on the wall! " +
+//         i +
+//         " bottles of beer! Take one down, pass it around... " +
+//         --i +
+//         " bottles of beer on the wall!"
+//     );
+//     i++;
+//   }
+// }
+
+function bottles(num) {
+  for (i = 0; i <= num; num--) {
+    if (num > 0) {
+      console.log(
+        num +
+          " bottles of beer on the wall! " +
+          num +
+          " bottles of beer! Take one down, pass it around... " +
+          --num +
+          " bottles of beer on the wall!"
+      );
+      num++;
+    }
+  }
+}
+
+
+function bottles(num) {
+  for (i = 0; i <= num; num--) {
+    if (num > 0) {
+
+
+      console.log( num + +num + + --num +);
+      num++;
+    }
+  }
+}
+
+
+function name(params) {
+  
+}
+
+
+
+
+
+bottles(99);
