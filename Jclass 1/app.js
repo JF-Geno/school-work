@@ -240,25 +240,15 @@ function bottles(num) {
   }
 }
 
-
 function bottles(num) {
   for (i = 0; i <= num; num--) {
     if (num > 0) {
-
-
-      console.log( num + +num + + --num +);
+      console.log(num + +num + +--num);
       num++;
     }
   }
 }
 
-
-function name(params) {
-  
-}
-
-
-
-
+function name(params) {}
 
 bottles(99);
