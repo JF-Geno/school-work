@@ -4,24 +4,25 @@
 // let x = getRandomInt(1, 10);
 // console.log(x);
 // let guess = parseInt(prompt());
-// while (x) {
-//   let numTries = 0;
-//   console.log("I'm thinking of a number between 1 and 10!");
-//   console.log("You guessed ", guess, ".");
-//   if (guess !== x) {
-//     console.log("Sorry, that's wrong. Try again.");
-//     guess = parseInt(prompt());
-//     numTries++;
-//   } else if (guess == x) {
-//     console.log("You guessed ", guess, ".");
-//     console.log("You got it!");
-//     console.log("The secret number ", x, ".");
-//     console.log("It only took you ", numTries, "guesses.");
-//     x = false;
-//   }
-// }
+while (x) {
+  let numTries = 0;
+  console.log("I'm thinking of a number between 1 and 10!");
+  console.log("You guessed ", guess, ".");
+  if (guess !== x) {
+    console.log("Sorry, that's wrong. Try again.");
+    guess = parseInt(prompt());
+    numTries++;
+  } else if (guess == x) {
+    console.log("You guessed ", guess, ".");
+    console.log("You got it!");
+    console.log("The secret number ", x, ".");
+    console.log("It only took you ", numTries, "guesses.");
+    x = false;
+  }
+}
 
 ///////////////////////////////////////////////////////////
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max + 1 - min)) + min;
 }
